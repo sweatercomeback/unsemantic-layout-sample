@@ -1,10 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Unsemantic Layout</title>
+  <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
 
+<body>
+  <div id="wrapper">
+      <header>
+        <div class="row">
+          <div class="left">Lorem ipsum dolor sit amet</div>
+          <div class="right">Lorem ipsum dolor sit amet</div>
+        </div>
+        <div class="row">
+          <div class="grid-33">Lorem ipsum dolor sit amet</div>
+          <div class="grid-66">Lorem ipsum dolor sit amet</div>
+        </div>
+        <div class="row">
+          <div class="left">
+            <div class="grid-33">Lorem ipsum dolor sit amet</div>
+            <div class="grid-33">Lorem ipsum dolor sit amet</div>
+            <div class="grid-33">Lorem ipsum dolor sit amet</div>
+          </div>
+          <div class="right">
+            Lorem ipsum dolor sit amet
+          </div>
+        </div>
+      </header>
+      <div class="sub-header">
+        <div class="grid-100">
+          Subheader
+        </div>
+
+      </div>
+      <div class="page-body">
+        <div><img src="//unsplash.it/200?image=10" /></div>
+        <div><img src="//unsplash.it/200?image=11" /></div>
+        <div><img src="//unsplash.it/200?image=12" /></div>
+        <div><img src="//unsplash.it/200?image=13" /></div>
+        <div><img src="//unsplash.it/200?image=14" /></div>
+        <div><img src="//unsplash.it/200?image=15" /></div>
+        <div><img src="//unsplash.it/200?image=16" /></div>
+        <div><img src="//unsplash.it/200?image=17" /></div>
+        <div><img src="//unsplash.it/200?image=18" /></div>
+        <div><img src="//unsplash.it/200?image=19" /></div>
+        <div><img src="//unsplash.it/200?image=20" /></div>
+        <div><img src="//unsplash.it/200?image=21" /></div>
+      </div>
+      <footer>
+        <div class="left">
+          <div class="left">footer</div>
+          <div class="right">footer</div>
+          <div class="grid-100">footer</div>
+        </div>
+        <div class="right">
+          <div class="left">footer</div>
+          <div class="right">footer</div>
+        </div>
+      </footer>
+  </div>
 </body>
+
 </html>

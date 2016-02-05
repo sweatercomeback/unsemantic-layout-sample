@@ -1,0 +1,58 @@
+@import "../../node_modules/unsemantic/assets/sass/partials/unsemantic-vars";
+@import "../../node_modules/unsemantic/assets/sass/partials/unsemantic-grid-responsive";
+
+@include unsemantic-grid-placeholders;
+
+/* =========== */
+/* Variables */
+/* =========== */
+$header-bg-color: rgb(67, 106, 135);
+$sub-header-bg-color: rgb(146, 178, 195);
+$footer-bg-color: rgb(176, 176, 176);
+
+/* =========== */
+/* Layout */
+/* =========== */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  outline: 1px solid orange;
+}
+#wrapper {
+  @extend %grid-container;
+
+  header, footer, .page-body, .row {
+    @extend %grid-columns-all;
+  }
+
+  header {
+    min-height: 60px;
+    background-color: $header-bg-color;
+  }
+
+  .sub-header {
+    min-height: 60px;
+    background-color: $sub-header-bg-color;
+  }
+
+  .page-body {
+    margin: 50px 20px;
+    div {
+      @extend %desktop-grid-33;
+      text-align: center;
+    }
+  }
+
+  footer {
+    height: 100px;
+    background-color: $footer-bg-color;
+  }
+
+  .left, .right {
+    @extend %desktop-grid-50;
+  }
+
+}
