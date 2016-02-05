@@ -1,10 +1,10 @@
-###### build
+### build
 
 compile scss: `npm run sass`
 
 watch scss: `npm run watch`
 
-###### run
+### run
 
 use any static file web server
 
